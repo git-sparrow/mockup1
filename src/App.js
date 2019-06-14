@@ -48,24 +48,29 @@ function App() {
                 <img className="post-card_img" src={img1} alt="1" />
               </a>
             </div>
-            <div className="post-info">
-              <time className="post-time" dateTime="2014-08-12">
-                12 August 2014
-              </time>
-              <span>/</span>
-              <span>1 Comment</span>
+            <hr />
+            <div className="post-footer">
+              <div className="post-info">
+                <time className="post-time" dateTime="2014-08-12">
+                  12 August 2014
+                </time>
+                <span>/</span>
+                <span>1 Comment</span>
+              </div>
+              <div className="share-block">
+                <ul className="share-block_list">
+                  <li>
+                    <a className="share mail" href="https://www.google.com/gmail/" />
+                  </li>
+                  <li>
+                    <a className="share facebook" href="https://www.facebook.com/" />
+                  </li>
+                  <li>
+                    <a className="share twitter" href="https://twitter.com/" />
+                  </li>
+                </ul>
+              </div>
             </div>
-            <ul className="share-block">
-              <li>
-                <a className="share mail" href="" />
-              </li>
-              <li>
-                <a className="share facebook" href="" />
-              </li>
-              <li>
-                <a className="share twitter" href="" />
-              </li>
-            </ul>
           </div>
 
           <div className="col-3 post">
@@ -74,24 +79,29 @@ function App() {
                 <img className="post-card_img" src={img2} alt="2" />
               </a>
             </div>
-            <div className="post-info">
-              <time className="post-time" dateTime="2014-08-12">
-                12 August 2014
-              </time>
-              <span>/</span>
-              <span>1 Comment</span>
+            <hr />
+            <div className="post-footer">
+              <div className="post-info">
+                <time className="post-time" dateTime="2014-08-12">
+                  12 August 2014
+                </time>
+                <span>/</span>
+                <span>1 Comment</span>
+              </div>
+              <div className="share-block">
+                <ul className="share-block_list">
+                  <li>
+                    <a className="share mail" href="https://www.google.com/gmail/" />
+                  </li>
+                  <li>
+                    <a className="share facebook" href="https://www.facebook.com/" />
+                  </li>
+                  <li>
+                    <a className="share twitter" href="https://twitter.com/" />
+                  </li>
+                </ul>
+              </div>
             </div>
-            <ul className="share-block">
-              <li>
-                <a className="share mail" href="" />
-              </li>
-              <li>
-                <a className="share facebook" href="" />
-              </li>
-              <li>
-                <a className="share twitter" href="" />
-              </li>
-            </ul>
           </div>
 
           <div className="col-3 post">
@@ -100,20 +110,29 @@ function App() {
                 <img className="post-card_img" src="" alt="3" />
               </a>
             </div>
-            <div>
-              02 August 2014 / <span>1 Comment</span>
+            <hr />
+            <div className="post-footer">
+              <div className="post-info">
+                <time className="post-time" dateTime="2014-08-12">
+                  12 August 2014
+                </time>
+                <span>/</span>
+                <span>1 Comment</span>
+              </div>
+              <div className="share-block">
+                <ul className="share-block_list">
+                  <li>
+                    <a className="share mail" href="https://www.google.com/gmail/" />
+                  </li>
+                  <li>
+                    <a className="share facebook" href="https://www.facebook.com/" />
+                  </li>
+                  <li>
+                    <a className="share twitter" href="https://twitter.com/" />
+                  </li>
+                </ul>
+              </div>
             </div>
-            <ul className="share-block">
-              <li>
-                <a className="share mail" href="" />
-              </li>
-              <li>
-                <a className="share facebook" href="" />
-              </li>
-              <li>
-                <a className="share twitter" href="" />
-              </li>
-            </ul>
           </div>
 
           <div className="col-3 post">
@@ -122,26 +141,37 @@ function App() {
                 <img className="post-card_img" src={img3} alt="3" />
               </a>
             </div>
-            <div>
-              01 August 2014 / <span>3 Comment</span>
+            <hr />
+            <div className="post-footer">
+              <div className="post-info">
+                <time className="post-time" dateTime="2014-08-12">
+                  12 August 2014
+                </time>
+                <span>/</span>
+                <span>1 Comment</span>
+              </div>
+              <div className="share-block">
+                <ul className="share-block_list">
+                  <li>
+                    <a className="share mail" href="https://www.google.com/gmail/" />
+                  </li>
+                  <li>
+                    <a className="share facebook" href="https://www.facebook.com/" />
+                  </li>
+                  <li>
+                    <a className="share twitter" href="https://twitter.com/" />
+                  </li>
+                </ul>
+              </div>
             </div>
-            <ul className="share-block">
-              <li>
-                <a className="share mail" href="" />
-              </li>
-              <li>
-                <a className="share facebook" href="" />
-              </li>
-              <li>
-                <a className="share twitter" href="" />
-              </li>
-            </ul>
           </div>
         </div>
 
+        <hr />
         <div className="loadMorePosts">
-          <p>load more posts</p>
+            <button><p>load more posts</p></button>
         </div>
+        <hr />
       </main>
 
       <footer>
