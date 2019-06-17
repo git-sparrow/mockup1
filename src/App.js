@@ -43,19 +43,17 @@ function App() {
       <main className="main-content container">
         <div className="row">
           <div className="col-3 post">
-            <div className="post-card">
-              <a className="post-link" href="#">
-                <img className="post-card_img" src={img1} alt="1" />
-              </a>
-            </div>
+            <a className="post-card" href="#">
+              <img className="post-card_img" src={img1} alt="1" />
+            </a>
             <hr />
             <div className="post-footer">
-              <div className="post-info">
+              <div className="post-footer_info">
                 <time className="post-time" dateTime="2014-08-12">
                   12 August 2014
                 </time>
                 <span>/</span>
-                <span>1 Comment</span>
+                <span className="post-comment">3 Comment</span>
               </div>
               <div className="share-block">
                 <ul className="share-block_list">
@@ -74,19 +72,17 @@ function App() {
           </div>
 
           <div className="col-3 post">
-            <div className="post-card">
-              <a className="post-link">
-                <img className="post-card_img" src={img2} alt="2" />
-              </a>
-            </div>
+            <a className="post-card" href="/">
+              <img className="post-card_img" src={img2} alt="2" />
+            </a>
             <hr />
             <div className="post-footer">
-              <div className="post-info">
+              <div className="post-footer_info">
                 <time className="post-time" dateTime="2014-08-12">
                   12 August 2014
                 </time>
                 <span>/</span>
-                <span>1 Comment</span>
+                <span className="post-comment">1 Comment</span>
               </div>
               <div className="share-block">
                 <ul className="share-block_list">
@@ -105,19 +101,22 @@ function App() {
           </div>
 
           <div className="col-3 post">
-            <div className="post-card">
-              <a className="post-link">
-                <img className="post-card_img" src="" alt="3" />
-              </a>
-            </div>
+            <a className="post-card" href="#">
+              <div className="post-card_description">
+                <span className="post-card_description_hashtag">#design #inspirations</span>
+                <span className="post-card_description_description">
+                  However beautiful the strategy, you should occasionally look at the results.
+                </span>
+              </div>
+            </a>
             <hr />
             <div className="post-footer">
-              <div className="post-info">
+              <div className="post-footer_info">
                 <time className="post-time" dateTime="2014-08-12">
                   12 August 2014
                 </time>
                 <span>/</span>
-                <span>1 Comment</span>
+                <span className="post-comment">7 Comment</span>
               </div>
               <div className="share-block">
                 <ul className="share-block_list">
@@ -136,19 +135,17 @@ function App() {
           </div>
 
           <div className="col-3 post">
-            <div className="post-card">
-              <a className="post-link">
-                <img className="post-card_img" src={img3} alt="3" />
-              </a>
-            </div>
+            <a className="post-card" href="">
+              <img className="post-card_img" src={img3} alt="3" />
+            </a>
             <hr />
             <div className="post-footer">
-              <div className="post-info">
+              <div className="post-footer_info">
                 <time className="post-time" dateTime="2014-08-12">
                   12 August 2014
                 </time>
                 <span>/</span>
-                <span>1 Comment</span>
+                <span className="post-comment">12 Comment</span>
               </div>
               <div className="share-block">
                 <ul className="share-block_list">
