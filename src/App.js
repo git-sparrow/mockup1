@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import './App.scss'
 
 import img1 from '../src/img/posts/img1.jpg'
 import img2 from '../src/img/posts/img2.jpg'
@@ -167,11 +167,15 @@ function App() {
           </div>
         </div>
 
-        <hr />
-        <div className="loadMorePosts">
-            <button><p>load more posts</p></button>
+        <div>
+          <hr />
+          <div className="loadMorePosts">
+            <button>
+              <p>load more posts</p>
+            </button>
+          </div>
+          <hr />
         </div>
-        <hr />
       </main>
 
       <footer>
