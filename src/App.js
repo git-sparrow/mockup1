@@ -44,6 +44,10 @@ function App() {
         <div className="row">
           <div className="col-3 post">
             <a className="post-card" href="#">
+              <div className="overlay">
+                <span className="hashtag">#design #inspirations</span>
+                <span className="viewGallery">View Gallery</span>
+              </div>
               <img className="post-card_img" src={img1} alt="1" />
             </a>
             <hr />
@@ -73,6 +77,10 @@ function App() {
 
           <div className="col-3 post">
             <a className="post-card" href="/">
+              <div className="overlay">
+                <span className="hashtag">#design #inspirations</span>
+                <span className="viewGallery">View Gallery</span>
+              </div>
               <img className="post-card_img" src={img2} alt="2" />
             </a>
             <hr />
@@ -102,6 +110,10 @@ function App() {
 
           <div className="col-3 post">
             <a className="post-card" href="#">
+              <div className="overlay">
+                <span className="hashtag">#design #inspirations</span>
+                <span className="viewGallery">View Gallery</span>
+              </div>
               <div className="post-card_description">
                 <span className="post-card_description_hashtag">#design #inspirations</span>
                 <span className="post-card_description_description">
@@ -136,6 +148,10 @@ function App() {
 
           <div className="col-3 post">
             <a className="post-card" href="">
+              <div className="overlay">
+                <span className="hashtag">#design #inspirations</span>
+                <span className="viewGallery">View Gallery</span>
+              </div>
               <img className="post-card_img" src={img3} alt="3" />
             </a>
             <hr />
