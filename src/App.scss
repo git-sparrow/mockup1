@@ -13,13 +13,18 @@ body {
 }
 
 header {
-  padding-bottom: 150px;
+  padding-bottom: 80px;
   .social-links {
     padding-top: 120px;
   }
 }
 
+main {
+  margin-bottom: 180px;
+}
+
 .container {
+  padding: 0;
   max-width: 1707px;
 }
 
@@ -34,7 +39,7 @@ header {
 }
 
 .search {
-  width: 80px;
+  width: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -48,9 +53,9 @@ header {
 }
 
 .search-text {
-  font-size: 14px;
-  color: rgb(28, 28, 28);
-  line-height: 2.143;
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 18.66px;
+  color: #1c1c1c;
 }
 
 .social-links {
@@ -73,19 +78,19 @@ header {
 
 .dribbble-logo {
   width: 21px;
-  height: 20px;
+  height: 21px;
   background: url('img/Dribbble Logo.png') no-repeat;
 }
 
 .linkedin-logo {
   width: 21px;
-  height: 20px;
+  height: 21px;
   background: url('img/Linkedin Logo.png') no-repeat;
 }
 
 .instagram-logo {
   width: 21px;
-  height: 20px;
+  height: 21px;
   background: url('img/Instagram.png') no-repeat;
 }
 
@@ -105,19 +110,19 @@ header {
 .header-content {
   h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: 47.99px;
+    font-family: 'Myriad Pro', sans-serif;
+    color: #1c1c1c;
     text-transform: uppercase;
-    line-height: 1em;
+    line-height: 0.417;
+    letter-spacing: 13px;
   }
-}
-
-.header-content {
   p {
     padding-top: 40px;
     margin: 0;
-    font-size: 15px;
+    font-size: 18.66px;
     font-family: 'Georgia', sans-serif;
-    color: rgb(143, 143, 143);
+    color: #8f8f8f;
     font-style: italic;
     line-height: 1.2em;
   }
@@ -127,10 +132,16 @@ header {
   padding: 0;
 }
 
+.content {
+  padding-bottom: 115px;
+}
+
 .post {
-  height: 640px;
+  margin-top: 75px;
+  height: 630px;
   hr {
-    margin-top: 1.2em;
+    margin: 0;
+    margin-top: 0.8em;
   }
 }
 
@@ -162,7 +173,7 @@ header {
   align-items: center;
 
   &:hover {
-    opacity: .8;
+    opacity: 0.8;
   }
 
   .hashtag {
@@ -202,6 +213,7 @@ header {
 }
 
 .post-footer {
+  margin-top: 7px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -270,13 +282,19 @@ header {
       background-position: -17px 0;
     }
   }
+}
 
-
+.loadBlock {
+  hr {
+    margin: 0;
+  }
 }
 
 .loadMorePosts {
+  margin: 35px 0;
   display: flex;
   justify-content: center;
+
   button {
     border: unset;
     background: transparent;
@@ -286,8 +304,25 @@ header {
   }
   p {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     font-family: 'Myriad Pro', sans-serif;
+  }
+}
+
+footer {
+  margin-bottom: 80px;
+}
+
+.footer-content {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Myriad Pro', sans-serif;
+  color: #818181;
+  p {
+    margin: 0;
   }
 }

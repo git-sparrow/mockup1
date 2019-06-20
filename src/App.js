@@ -35,13 +35,287 @@ function App() {
           </ul>
           <div className="header-content">
             <h1>constellation</h1>
-            <p>If I create from heart, nearly everything works; if from head, almost nothing.</p>
+            <p>If I create from heart, nearly everything works; if from the head, almost nothing.</p>
           </div>
         </div>
       </header>
 
       <main className="main-content container">
-        <div className="row">
+        <div className="content row">
+          <div className="col-3 post">
+            <a className="post-card" href="#">
+              <div className="overlay">
+                <span className="hashtag">#design #inspirations</span>
+                <span className="viewGallery">View Gallery</span>
+              </div>
+              <img className="post-card_img" src={img1} alt="1" />
+            </a>
+            <hr />
+            <div className="post-footer">
+              <div className="post-footer_info">
+                <time className="post-time" dateTime="2014-08-12">
+                  12 August 2014
+                </time>
+                <span>/</span>
+                <span className="post-comment">3 Comment</span>
+              </div>
+              <div className="share-block">
+                <ul className="share-block_list">
+                  <li>
+                    <a className="share mail" href="https://www.google.com/gmail/" />
+                  </li>
+                  <li>
+                    <a className="share facebook" href="https://www.facebook.com/" />
+                  </li>
+                  <li>
+                    <a className="share twitter" href="https://twitter.com/" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-3 post">
+            <a className="post-card" href="/">
+              <div className="overlay">
+                <span className="hashtag">#design #inspirations</span>
+                <span className="viewGallery">View Gallery</span>
+              </div>
+              <img className="post-card_img" src={img2} alt="2" />
+            </a>
+            <hr />
+            <div className="post-footer">
+              <div className="post-footer_info">
+                <time className="post-time" dateTime="2014-08-12">
+                  12 August 2014
+                </time>
+                <span>/</span>
+                <span className="post-comment">1 Comment</span>
+              </div>
+              <div className="share-block">
+                <ul className="share-block_list">
+                  <li>
+                    <a className="share mail" href="https://www.google.com/gmail/" />
+                  </li>
+                  <li>
+                    <a className="share facebook" href="https://www.facebook.com/" />
+                  </li>
+                  <li>
+                    <a className="share twitter" href="https://twitter.com/" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-3 post">
+            <a className="post-card" href="#">
+              <div className="overlay">
+                <span className="hashtag">#design #inspirations</span>
+                <span className="viewGallery">View Gallery</span>
+              </div>
+              <div className="post-card_description">
+                <span className="post-card_description_hashtag">#design #inspirations</span>
+                <span className="post-card_description_description">
+                  However beautiful the strategy, you should occasionally look at the results.
+                </span>
+              </div>
+            </a>
+            <hr />
+            <div className="post-footer">
+              <div className="post-footer_info">
+                <time className="post-time" dateTime="2014-08-12">
+                  12 August 2014
+                </time>
+                <span>/</span>
+                <span className="post-comment">7 Comment</span>
+              </div>
+              <div className="share-block">
+                <ul className="share-block_list">
+                  <li>
+                    <a className="share mail" href="https://www.google.com/gmail/" />
+                  </li>
+                  <li>
+                    <a className="share facebook" href="https://www.facebook.com/" />
+                  </li>
+                  <li>
+                    <a className="share twitter" href="https://twitter.com/" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-3 post">
+            <a className="post-card" href="">
+              <div className="overlay">
+                <span className="hashtag">#design #inspirations</span>
+                <span className="viewGallery">View Gallery</span>
+              </div>
+              <img className="post-card_img" src={img3} alt="3" />
+            </a>
+            <hr />
+            <div className="post-footer">
+              <div className="post-footer_info">
+                <time className="post-time" dateTime="2014-08-12">
+                  12 August 2014
+                </time>
+                <span>/</span>
+                <span className="post-comment">12 Comment</span>
+              </div>
+              <div className="share-block">
+                <ul className="share-block_list">
+                  <li>
+                    <a className="share mail" href="https://www.google.com/gmail/" />
+                  </li>
+                  <li>
+                    <a className="share facebook" href="https://www.facebook.com/" />
+                  </li>
+                  <li>
+                    <a className="share twitter" href="https://twitter.com/" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-3 post">
+            <a className="post-card" href="#">
+              <div className="overlay">
+                <span className="hashtag">#design #inspirations</span>
+                <span className="viewGallery">View Gallery</span>
+              </div>
+              <img className="post-card_img" src={img1} alt="1" />
+            </a>
+            <hr />
+            <div className="post-footer">
+              <div className="post-footer_info">
+                <time className="post-time" dateTime="2014-08-12">
+                  12 August 2014
+                </time>
+                <span>/</span>
+                <span className="post-comment">3 Comment</span>
+              </div>
+              <div className="share-block">
+                <ul className="share-block_list">
+                  <li>
+                    <a className="share mail" href="https://www.google.com/gmail/" />
+                  </li>
+                  <li>
+                    <a className="share facebook" href="https://www.facebook.com/" />
+                  </li>
+                  <li>
+                    <a className="share twitter" href="https://twitter.com/" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-3 post">
+            <a className="post-card" href="/">
+              <div className="overlay">
+                <span className="hashtag">#design #inspirations</span>
+                <span className="viewGallery">View Gallery</span>
+              </div>
+              <img className="post-card_img" src={img2} alt="2" />
+            </a>
+            <hr />
+            <div className="post-footer">
+              <div className="post-footer_info">
+                <time className="post-time" dateTime="2014-08-12">
+                  12 August 2014
+                </time>
+                <span>/</span>
+                <span className="post-comment">1 Comment</span>
+              </div>
+              <div className="share-block">
+                <ul className="share-block_list">
+                  <li>
+                    <a className="share mail" href="https://www.google.com/gmail/" />
+                  </li>
+                  <li>
+                    <a className="share facebook" href="https://www.facebook.com/" />
+                  </li>
+                  <li>
+                    <a className="share twitter" href="https://twitter.com/" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-3 post">
+            <a className="post-card" href="#">
+              <div className="overlay">
+                <span className="hashtag">#design #inspirations</span>
+                <span className="viewGallery">View Gallery</span>
+              </div>
+              <div className="post-card_description">
+                <span className="post-card_description_hashtag">#design #inspirations</span>
+                <span className="post-card_description_description">
+                  However beautiful the strategy, you should occasionally look at the results.
+                </span>
+              </div>
+            </a>
+            <hr />
+            <div className="post-footer">
+              <div className="post-footer_info">
+                <time className="post-time" dateTime="2014-08-12">
+                  12 August 2014
+                </time>
+                <span>/</span>
+                <span className="post-comment">7 Comment</span>
+              </div>
+              <div className="share-block">
+                <ul className="share-block_list">
+                  <li>
+                    <a className="share mail" href="https://www.google.com/gmail/" />
+                  </li>
+                  <li>
+                    <a className="share facebook" href="https://www.facebook.com/" />
+                  </li>
+                  <li>
+                    <a className="share twitter" href="https://twitter.com/" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-3 post">
+            <a className="post-card" href="">
+              <div className="overlay">
+                <span className="hashtag">#design #inspirations</span>
+                <span className="viewGallery">View Gallery</span>
+              </div>
+              <img className="post-card_img" src={img3} alt="3" />
+            </a>
+            <hr />
+            <div className="post-footer">
+              <div className="post-footer_info">
+                <time className="post-time" dateTime="2014-08-12">
+                  12 August 2014
+                </time>
+                <span>/</span>
+                <span className="post-comment">12 Comment</span>
+              </div>
+              <div className="share-block">
+                <ul className="share-block_list">
+                  <li>
+                    <a className="share mail" href="https://www.google.com/gmail/" />
+                  </li>
+                  <li>
+                    <a className="share facebook" href="https://www.facebook.com/" />
+                  </li>
+                  <li>
+                    <a className="share twitter" href="https://twitter.com/" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           <div className="col-3 post">
             <a className="post-card" href="#">
               <div className="overlay">
@@ -180,7 +454,7 @@ function App() {
           </div>
         </div>
 
-        <div>
+        <div className="loadBlock">
           <hr />
           <div className="loadMorePosts">
             <button>
