@@ -236,10 +236,6 @@ header {
 
 .share {
   display: block;
-
-  &:hover {
-    filter: brightness(0) saturate(100%) invert(60%) sepia(89%) saturate(394%) hue-rotate(109deg) brightness(93%) contrast(96%);;
-  }
 }
 
 .share-block_list li:nth-child(n + 2) {
@@ -248,20 +244,34 @@ header {
 
 .share-block_list {
   .mail {
-    width: 28px;
-    height: 20px;
-    background: url('img/Close Envelope.png') no-repeat;
+    width: 20px;
+    height: 14px;
+    background: url('img/Close Envelope.png') no-repeat 0 0;
+
+    &:hover {
+      background-position: -21px 0;
+    }
   }
   .facebook {
-    width: 10px;
-    height: 20px;
-    background: url('img/Facebook.png') no-repeat;
+    width: 8px;
+    height: 14px;
+    background: url('img/Facebook.png') no-repeat 0 0;
+
+    &:hover {
+      background-position: -9px 0;
+    }
   }
   .twitter {
-    width: 24px;
-    height: 20px;
-    background: url('img/Social Twitter Bird Symbol copy.png') no-repeat;
+    width: 16px;
+    height: 13px;
+    background: url('img/Social Twitter Bird Symbol copy.png') no-repeat 0 0;
+
+    &:hover {
+      background-position: -17px 0;
+    }
   }
+
+
 }
 
 .loadMorePosts {
