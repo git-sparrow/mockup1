@@ -36,6 +36,10 @@ main {
   width: 34px;
   height: 19px;
   background: url('img/Hamburger Menu.png') no-repeat;
+
+  &:hover {
+    filter: invert(79%) sepia(49%) saturate(1796%) hue-rotate(99deg) brightness(91%) contrast(83%);
+  }
 }
 
 .search {
@@ -44,6 +48,10 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  &:hover {
+    filter: invert(79%) sepia(49%) saturate(1796%) hue-rotate(99deg) brightness(91%) contrast(83%);
+  }
 }
 
 .search-glass {
@@ -80,24 +88,40 @@ main {
   width: 21px;
   height: 21px;
   background: url('img/Dribbble Logo.png') no-repeat;
+
+  &:hover {
+    background-position: -22px 0;
+  }
 }
 
 .linkedin-logo {
   width: 21px;
   height: 21px;
   background: url('img/Linkedin Logo.png') no-repeat;
+
+  &:hover {
+    background-position: -22px 0;
+  }
 }
 
 .instagram-logo {
   width: 21px;
   height: 21px;
   background: url('img/Instagram.png') no-repeat;
+
+  &:hover {
+    background-position: -22px 0;
+  }
 }
 
 .twitter-logo {
   width: 24px;
   height: 20px;
   background: url('img/Social Twitter Bird Symbol.png') no-repeat;
+
+  &:hover {
+    background-position: -25px 0;
+  }
 }
 
 .header-content {
@@ -205,7 +229,8 @@ main {
   font-size: 18.66px;
 }
 
-.post-card_description_description {
+.post-card_description_text {
+  font-family: 'Myriad Pro', sans-serif;
   color: #1c1c1c;
   font-size: 32px;
 }
@@ -219,7 +244,7 @@ main {
 }
 
 .post-footer_info {
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Myriad Pro', sans-serif;
   color: #818181;
   span {
@@ -249,7 +274,7 @@ main {
 }
 
 .share-block_list li:nth-child(n + 2) {
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 .share-block_list {
@@ -305,6 +330,10 @@ main {
     font-size: 16px;
     text-transform: uppercase;
     font-family: 'Myriad Pro', sans-serif;
+  }
+
+  &:hover {
+    color: #16d598;
   }
 }
 

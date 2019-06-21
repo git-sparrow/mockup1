@@ -116,7 +116,7 @@ function App() {
               </div>
               <div className="post-card_description">
                 <span className="post-card_description_hashtag">#design #inspirations</span>
-                <span className="post-card_description_description">
+                <span className="post-card_description_text">
                   However beautiful the strategy, you should occasionally look at the results.
                 </span>
               </div>
@@ -253,7 +253,7 @@ function App() {
               </div>
               <div className="post-card_description">
                 <span className="post-card_description_hashtag">#design #inspirations</span>
-                <span className="post-card_description_description">
+                <span className="post-card_description_text">
                   However beautiful the strategy, you should occasionally look at the results.
                 </span>
               </div>
@@ -390,7 +390,7 @@ function App() {
               </div>
               <div className="post-card_description">
                 <span className="post-card_description_hashtag">#design #inspirations</span>
-                <span className="post-card_description_description">
+                <span className="post-card_description_text">
                   However beautiful the strategy, you should occasionally look at the results.
                 </span>
               </div>
