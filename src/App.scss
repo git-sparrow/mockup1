@@ -1,9 +1,12 @@
 html {
+  min-height: 100%;
+  position: relative;
   margin: 0;
   padding: 0;
 }
 
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -23,6 +26,10 @@ main {
   margin-bottom: 180px;
 }
 
+.pagge-wrapper {
+  height: 100%;
+}
+
 .container {
   padding: 0;
   max-width: 1707px;
@@ -36,9 +43,14 @@ main {
   width: 34px;
   height: 19px;
   background: url('img/Hamburger Menu.png') no-repeat;
+  border: none;
+  outline: 0;
 
   &:hover {
-    filter: invert(79%) sepia(49%) saturate(1796%) hue-rotate(99deg) brightness(91%) contrast(83%);
+    filter: invert(86%) sepia(38%) saturate(6120%) hue-rotate(109deg) brightness(97%) contrast(83%);
+  }
+  &:focus {
+    outline: none;
   }
 }
 
@@ -147,6 +159,99 @@ main {
     color: #8f8f8f;
     font-style: italic;
     line-height: 1.2em;
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  position: absolute;
+  top: 0;
+  left: -540px;
+  z-index: 1;
+  background-color: #181818;
+  width: 540px;
+  height: 100%;
+  transition: 0.5s all;
+
+  .social-links {
+    justify-content: flex-start;
+    margin-bottom: 65px;
+  }
+
+  hr {
+    margin: 0;
+    border: 1px solid #2b2b2b;
+  }
+}
+
+.closeSidebar {
+  width: 20px;
+  height: 19px;
+  position: absolute;
+  top: 32px;
+  left: 495px;
+  border: none;
+  outline: none;
+  background: url('img/Rounded Rectangle 2 copy.png') no-repeat;
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(86%) sepia(38%) saturate(6120%) hue-rotate(109deg)
+      brightness(97%) contrast(83%);
+  }
+}
+
+.sidebarContentWrapper {
+  margin-left: 107px;
+  margin-top: 140px;
+  width: 360px;
+}
+
+.sidebar-info {
+  width: 270px;
+}
+
+.sidebar-info_greeting {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 32px;
+
+  + p {
+    margin-bottom: 25px;
+  }
+  + p + p {
+    margin-bottom: 50px;
+  }
+}
+
+.sidebar-info_text {
+  margin: 0;
+  width: 260px;
+  color: #818181;
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 18.66px;
+}
+
+.sidebar-nav {
+  padding-top: 60px;
+  color: #ffffff;
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 32px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li:nth-child(n + 2) {
+      margin-top: 30px;
+    }
   }
 }
 

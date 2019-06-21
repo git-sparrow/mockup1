@@ -6,13 +6,26 @@ import img2 from '../src/img/posts/img2.jpg'
 import img3 from '../src/img/posts/img3.jpg'
 
 function App() {
+  function handleSidebarCollapse() {
+    let element = document.getElementById('sidebar')
+    if (element.style.left === '0px') {
+      element.style.left = '-540px'
+    }
+    element.style.left = '0px'
+  }
+
+  function handleSidebarClose() {
+    let element = document.getElementById('sidebar')
+    element.style.left = '-540px'
+  }
+
   return (
     <div className="pagge-wrapper container-fluid">
       <header id="header">
         <div className="container">
           <nav className="header-top-line navbar pt-4 px-2">
             <div className="menu">
-              <div className="hamburger-menu" />
+              <button className="hamburger-menu" type="button" onClick={handleSidebarCollapse} />
             </div>
             <div className="search">
               <div className="search-glass" />
@@ -35,10 +48,55 @@ function App() {
           </ul>
           <div className="header-content">
             <h1>constellation</h1>
-            <p>If I create from heart, nearly everything works; if from the head, almost nothing.</p>
+            <p>
+              If I create from heart, nearly everything works; if from the head, almost nothing.
+            </p>
           </div>
         </div>
       </header>
+
+      <aside className="sidebar" id="sidebar">
+        <button className="closeSidebar" type="button" onClick={handleSidebarClose} />
+        <div className="sidebarContentWrapper">
+          <div className="sidebar-info">
+            <h5 className="sidebar-info_greeting">Hello,</h5>
+            <p className="sidebar-info_text">
+              Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in,
+              dolor.
+            </p>
+            <p className="sidebar-info_text">
+              Pellentesque facilisis.
+              <br />
+              Nulla imperdiet sit amet magna.
+            </p>
+            <div className="share-block">
+              <ul className="social-links">
+                <li>
+                  <a className="social-header dribbble-logo" href="https://dribbble.com/" />
+                </li>
+                <li>
+                  <a className="social-header linkedin-logo" href="https://www.linkedin.com/" />
+                </li>
+                <li>
+                  <a className="social-header instagram-logo" href="https://www.instagram.com/" />
+                </li>
+                <li>
+                  <a className="social-header twitter-logo" href="https://twitter.com/" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <nav className="sidebar-nav">
+            <ul>
+              <li>Home</li>
+              <li>Posts</li>
+              <li>Galery</li>
+              <li>Contacts</li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
 
       <main className="main-content container">
         <div className="content row">
