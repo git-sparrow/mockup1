@@ -27,10 +27,10 @@ function App() {
             <div className="menu">
               <button className="hamburger-menu" type="button" onClick={handleSidebarCollapse} />
             </div>
-            <div className="search">
+            <button className="search">
               <div className="search-glass" />
               <span className="search-text">Search...</span>
-            </div>
+            </button>
           </nav>
           <ul className="social-links">
             <li>
@@ -89,10 +89,18 @@ function App() {
           <hr />
           <nav className="sidebar-nav">
             <ul>
-              <li>Home</li>
-              <li>Posts</li>
-              <li>Galery</li>
-              <li>Contacts</li>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Posts</a>
+              </li>
+              <li>
+                <a href="#">Galery</a>
+              </li>
+              <li>
+                <a href="#">Contacts</a>
+              </li>
             </ul>
           </nav>
         </div>

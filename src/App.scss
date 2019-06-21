@@ -55,6 +55,12 @@ main {
 }
 
 .search {
+  border: none;
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+  background: none;
   width: 100px;
   display: flex;
   flex-direction: row;
@@ -251,6 +257,16 @@ main {
 
     li:nth-child(n + 2) {
       margin-top: 30px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(86%) sepia(38%) saturate(6120%) hue-rotate(109deg)
+        brightness(97%) contrast(83%);
     }
   }
 }
