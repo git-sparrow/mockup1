@@ -7,7 +7,7 @@ import img3 from '../src/img/posts/img3.jpg'
 
 function App() {
   function handleSidebarCollapse() {
-    let element = document.getElementById('sidebar')
+    const element = document.getElementById('sidebar')
     if (element.style.left === '0px') {
       element.style.left = '-540px'
     }
@@ -15,8 +15,14 @@ function App() {
   }
 
   function handleSidebarClose() {
-    let element = document.getElementById('sidebar')
+    const element = document.getElementById('sidebar')
     element.style.left = '-540px'
+  }
+
+  function handleSearchClick() {
+    const element = document.getElementById('page-overlay')
+    element.style.opacity = '0.7'
+    element.style.display = 'block'
   }
 
   return (
@@ -27,7 +33,7 @@ function App() {
             <div className="menu">
               <button className="hamburger-menu" type="button" onClick={handleSidebarCollapse} />
             </div>
-            <button className="search">
+            <button className="search" type="button" onClick={handleSearchClick}>
               <div className="search-glass" />
               <span className="search-text">Search...</span>
             </button>
@@ -110,7 +116,7 @@ function App() {
         <div className="content row">
           <div className="col-3 post">
             <a className="post-card" href="#">
-              <div className="overlay">
+              <div className="post-card_overlay">
                 <span className="hashtag">#design #inspirations</span>
                 <span className="viewGallery">View Gallery</span>
               </div>
@@ -143,7 +149,7 @@ function App() {
 
           <div className="col-3 post">
             <a className="post-card" href="/">
-              <div className="overlay">
+              <div className="post-card_overlay">
                 <span className="hashtag">#design #inspirations</span>
                 <span className="viewGallery">View Gallery</span>
               </div>
@@ -176,7 +182,7 @@ function App() {
 
           <div className="col-3 post">
             <a className="post-card" href="#">
-              <div className="overlay">
+              <div className="post-card_overlay">
                 <span className="hashtag">#design #inspirations</span>
                 <span className="viewGallery">View Gallery</span>
               </div>
@@ -214,7 +220,7 @@ function App() {
 
           <div className="col-3 post">
             <a className="post-card" href="">
-              <div className="overlay">
+              <div className="post-card_overlay">
                 <span className="hashtag">#design #inspirations</span>
                 <span className="viewGallery">View Gallery</span>
               </div>
@@ -247,7 +253,7 @@ function App() {
 
           <div className="col-3 post">
             <a className="post-card" href="#">
-              <div className="overlay">
+              <div className="post-card_overlay">
                 <span className="hashtag">#design #inspirations</span>
                 <span className="viewGallery">View Gallery</span>
               </div>
@@ -280,7 +286,7 @@ function App() {
 
           <div className="col-3 post">
             <a className="post-card" href="/">
-              <div className="overlay">
+              <div className="post-card_overlay">
                 <span className="hashtag">#design #inspirations</span>
                 <span className="viewGallery">View Gallery</span>
               </div>
@@ -313,7 +319,7 @@ function App() {
 
           <div className="col-3 post">
             <a className="post-card" href="#">
-              <div className="overlay">
+              <div className="post-card_overlay">
                 <span className="hashtag">#design #inspirations</span>
                 <span className="viewGallery">View Gallery</span>
               </div>
@@ -351,7 +357,7 @@ function App() {
 
           <div className="col-3 post">
             <a className="post-card" href="">
-              <div className="overlay">
+              <div className="post-card_overlay">
                 <span className="hashtag">#design #inspirations</span>
                 <span className="viewGallery">View Gallery</span>
               </div>
@@ -384,7 +390,7 @@ function App() {
 
           <div className="col-3 post">
             <a className="post-card" href="#">
-              <div className="overlay">
+              <div className="post-card_overlay">
                 <span className="hashtag">#design #inspirations</span>
                 <span className="viewGallery">View Gallery</span>
               </div>
@@ -417,7 +423,7 @@ function App() {
 
           <div className="col-3 post">
             <a className="post-card" href="/">
-              <div className="overlay">
+              <div className="post-card_overlay">
                 <span className="hashtag">#design #inspirations</span>
                 <span className="viewGallery">View Gallery</span>
               </div>
@@ -450,7 +456,7 @@ function App() {
 
           <div className="col-3 post">
             <a className="post-card" href="#">
-              <div className="overlay">
+              <div className="post-card_overlay">
                 <span className="hashtag">#design #inspirations</span>
                 <span className="viewGallery">View Gallery</span>
               </div>
@@ -488,7 +494,7 @@ function App() {
 
           <div className="col-3 post">
             <a className="post-card" href="">
-              <div className="overlay">
+              <div className="post-card_overlay">
                 <span className="hashtag">#design #inspirations</span>
                 <span className="viewGallery">View Gallery</span>
               </div>
@@ -557,6 +563,20 @@ function App() {
           </div>
         </div>
       </footer>
+
+      <div className="page-overlay" id="page-overlay" />
+      <div className="search-modal">
+        <input
+          className="search-modal_input"
+          type="search"
+          placeholder={
+            <div>
+              <span className="search-modal_input_glass" />
+              <span className="search-modal_input_text" />
+            </div>
+          }
+        />
+      </div>
     </div>
   )
 }

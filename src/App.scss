@@ -66,6 +66,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 
   &:hover {
     filter: invert(79%) sepia(49%) saturate(1796%) hue-rotate(99deg) brightness(91%) contrast(83%);
@@ -301,7 +302,7 @@ main {
   }
 }
 
-.overlay {
+.post-card_overlay {
   position: absolute;
   opacity: 0;
   transition: all 0.7s;
@@ -473,4 +474,29 @@ footer {
   p {
     margin: 0;
   }
+}
+
+.page-overlay {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.7s;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+}
+
+.search-modal {
+  display: none;
+  position: absolute;
+  top: 300px;
+  left: 360px
+}
+
+.search-modal_input_glass {
+  width: 34px;
+  height: 34px;
+  background: url("img/Dark Magnifying Glass Outline copy.png") no-repeat;
 }
